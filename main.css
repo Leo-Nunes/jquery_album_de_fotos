@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 16px 0;
+    display: flex;
+    color: red;
+    border-bottom: 8px solid rgba(66, 3, 3, 2);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 8px;
+    color: black;
+    background-color: rgb(245, 98, 98);
+    padding: 3px 2px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(192, 192, 192, 0.7);
+}
+
+input, button {
+    padding: 6px;
+}
+
+button {
+    background-color: black;
+    color: rgb(124, 182, 234);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form {
+    background-color:red;
+    padding: 16px;
+    box-shadow: 0px 10px 9px -8px rgb(252, 8, 8);
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 8px;
+}
+
+
+#center {
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#cancel {
+    color: rgba(255, 255, 45, 2);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-width: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay-image-link {
+    padding: 16px;
+    background-color: rgba(101, 92, 92, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-image-link {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-image-link {
+    opacity: 1;
+}
